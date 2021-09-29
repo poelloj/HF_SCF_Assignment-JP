@@ -3,3 +3,4 @@ numpy==1.21.2
 pyscf==1.7.6
 scipy==1.7.1
 pytest
+pycodestyle
