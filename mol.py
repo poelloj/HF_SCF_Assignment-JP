@@ -1,4 +1,4 @@
-""" 
+"""
 Mock mol class
 """
 
