@@ -21,10 +21,19 @@ def calc_nuclear_repulsion_energy(mol_):
     Enuc = 0
     charge = mol.atom_charges()
     coords = mol.atom_coords()
+    atom_distance = ([0, 0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0])
 
     for i in range(0 , 3):
         for j in range(0,3):
-            
+            atom_distance[i, j] = np.linalg.norm(coords[i] - coords[j])
+
+    for i in j range(0, 3):
+        for j in range(i+1, 3):
+            Enuc += (charge[i] * charge[j])/atom_distance[i, j]
+
+
     
     return Enuc
 
