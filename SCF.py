@@ -18,7 +18,9 @@ def calc_nuclear_repulsion_energy(mol_):
     Returns:
         Enuc: The n-e repulsion energy
     """
-
+    Enuc = 0
+    charge = mol.charges
+    coords = mol.matrix
     
     return Enuc
 
