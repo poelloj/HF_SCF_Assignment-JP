@@ -20,7 +20,11 @@ def calc_nuclear_repulsion_energy(mol_):
     """
     Enuc = 0
     charge = mol.atom_charges()
-    coords = mol.matrix
+    coords = mol.atom_coords()
+
+    for i in range(0 , 3):
+        for j in range(0,3):
+            
     
     return Enuc
 
